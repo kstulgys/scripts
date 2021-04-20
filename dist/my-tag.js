@@ -28,7 +28,7 @@ reactDomTag.setAttribute('defer', 'defer')
 reactDomTag.setAttribute('type', 'text/javascript');
 
 const antTag = document.createElement('script')
-antTag.setAttribute('src', 'https://www.unpkg.com/chakra-ui@0.3.9/dist/index.js')
+antTag.setAttribute('src', 'https://unpkg.com/@babel/standalone/babel.min.js')
 antTag.setAttribute('crossorigin', 'anonymous')
 antTag.setAttribute('defer', 'defer')
 antTag.setAttribute('type', 'text/javascript');
@@ -58,4 +58,12 @@ rootElement.style.backgroundColor = 'pink'
 
 body.prepend(rootElement)
 
-// ReactDOM.render(React.createElement(Calculator), rootElement);
+function App() {
+    return (
+        <div>
+            <p>Hello world, this is from JSX</p>
+        </div>
+    )
+}
+
+ReactDOM.render(<App />, document.getElementsByName('my-id'));
