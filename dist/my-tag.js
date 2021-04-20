@@ -22,7 +22,7 @@ reactTag.setAttribute('defer', 'defer')
 reactTag.setAttribute('type', 'text/javascript');
 
 
-head.append(reactTag)
+head.appendChild(reactTag)
 
 
 const cartLinks = [...document.querySelectorAll("a[href='/cart']")]
