@@ -13,4 +13,14 @@ cartLinks.forEach((link) => {
         window.alert("Cart clicked")
     })
 })
-// })(window)
+
+const body = document.getElementByTagName('BODY')
+const rootElement = document.createElement("div");
+rootElement.setAttribute('id', 'my-id')
+rootElement.style.height = '20px'
+rootElement.style.backgroundColor = 'pink'
+
+body.prepend(rootElement)
+
+
+// ReactDOM.render(Myui(), rootElement);
