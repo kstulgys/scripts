@@ -14,7 +14,7 @@ cartLinks.forEach((link) => {
     })
 })
 
-const body = document.getElementByTagName('BODY')
+const body = document.getElementsByTagName('BODY')[0]
 const rootElement = document.createElement("div");
 rootElement.setAttribute('id', 'my-id')
 rootElement.style.height = '20px'
