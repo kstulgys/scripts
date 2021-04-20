@@ -66,4 +66,4 @@ function App() {
     )
 }
 
-ReactDOM.render(<App />, document.getElementsByName('my-id'));
+ReactDOM.render(<App />, document.getElementById('my-id'));
