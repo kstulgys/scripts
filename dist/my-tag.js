@@ -9,7 +9,7 @@ console.log({ header })
 {/* <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script> */}
 
-const head = document.getElementsByName('HEAD')
+const head = document.getElementsByTagName('HEAD')[0]
 
 // const reactTag = document.createElement('script')
 // reactTag.setAttribute('src','https://unpkg.com/react@17/umd/react.production.min.js')
@@ -21,7 +21,7 @@ reactTag.setAttribute('crossorigin', 'crossorigin')
 reactTag.setAttribute('defer', 'defer')
 reactTag.setAttribute('type', 'text/javascript');
 
-
+console.log({ head })
 head.append(reactTag)
 
 
