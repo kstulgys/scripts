@@ -36,12 +36,12 @@ cartLinks.forEach((link) => {
 
 
 
-// const body = document.getElementsByTagName('BODY')[0]
-// const rootElement = document.createElement("div");
-// rootElement.setAttribute('id', 'my-id')
-// rootElement.style.height = '20px'
-// rootElement.style.backgroundColor = 'pink'
+const body = document.getElementsByTagName('BODY')[0]
+const rootElement = document.createElement("div");
+rootElement.setAttribute('id', 'my-id')
+rootElement.style.height = '20px'
+rootElement.style.backgroundColor = 'pink'
 
-// body.prepend(rootElement)
+body.prepend(rootElement)
 
 // ReactDOM.render(React.createElement(Calculator), rootElement);
