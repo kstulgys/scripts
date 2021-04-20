@@ -9,7 +9,7 @@ console.log({ header })
 {/* <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script> */}
 
-const head = document.getElementsByName('HEAD')[0]
+const head = document.getElementsByName('HEAD')
 
 // const reactTag = document.createElement('script')
 // reactTag.setAttribute('src','https://unpkg.com/react@17/umd/react.production.min.js')
