@@ -5,7 +5,7 @@ const header = document.getElementById("shopify-section-header")
 header.style.backgroundColor = 'green'
 console.log({ header })
 const cartLink = document.querySelectorAll("a[href='/cart']")[0]
-cartLink.addEventListener(() => {
+cartLink.addEventListener('click', () => {
     window.alert('Cart clicked')
 })
 // })
