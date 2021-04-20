@@ -17,8 +17,9 @@ const head = document.getElementsByName('HEAD')[0]
 
 const reactTag = document.createElement('script')
 reactTag.setAttribute('src', 'https://unpkg.com/react@17/umd/react.production.min.js')
-reactTag.setAttribute('crossorigin')
-reactTag.setAttribute('defer')
+reactTag.setAttribute('crossorigin', 'crossorigin')
+reactTag.setAttribute('defer', 'defer')
+reactTag.setAttribute('type', 'text/javascript');
 
 
 head.append(reactTag)
