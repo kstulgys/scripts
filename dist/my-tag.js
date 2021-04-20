@@ -21,9 +21,22 @@ reactTag.setAttribute('crossorigin', 'crossorigin')
 reactTag.setAttribute('defer', 'defer')
 reactTag.setAttribute('type', 'text/javascript');
 
+const reactDomTag = document.createElement('script')
+reactDomTag.setAttribute('src', 'https://unpkg.com/react-dom@17/umd/react-dom.production.min.js')
+reactDomTag.setAttribute('crossorigin', 'crossorigin')
+reactDomTag.setAttribute('defer', 'defer')
+reactDomTag.setAttribute('type', 'text/javascript');
+
+const antTag = document.createElement('script')
+antTag.setAttribute('src', 'https://cdnjs.cloudflare.com/ajax/libs/antd/4.15.2/antd.min.js')
+antTag.setAttribute('crossorigin', 'anonymous')
+antTag.setAttribute('defer', 'defer')
+antTag.setAttribute('type', 'text/javascript');
+
 console.log({ head })
 head.append(reactTag)
-
+head.append(reactDomTag)
+head.append(antTag)
 
 const cartLinks = [...document.querySelectorAll("a[href='/cart']")]
 
