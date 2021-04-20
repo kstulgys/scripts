@@ -28,7 +28,7 @@ reactDomTag.setAttribute('defer', 'defer')
 reactDomTag.setAttribute('type', 'text/javascript');
 
 const antTag = document.createElement('script')
-antTag.setAttribute('src', 'https://cdnjs.cloudflare.com/ajax/libs/antd/4.15.2/antd.min.js')
+antTag.setAttribute('src', 'https://www.unpkg.com/chakra-ui@0.3.9/dist/index.js')
 antTag.setAttribute('crossorigin', 'anonymous')
 antTag.setAttribute('defer', 'defer')
 antTag.setAttribute('type', 'text/javascript');
